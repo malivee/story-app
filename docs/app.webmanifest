@@ -1,0 +1,67 @@
+{
+  "name": "Dicoding StoryPost",
+  "short_name": "StoryPost",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#2e3a59",
+  "icons": [
+    {
+      "src": "images/logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "images/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }
+  ],
+  "screenshot": [
+    {
+      "src": "images/mobile1.png",
+      "sizes": "502x878",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "images/mobile2.png",
+      "sizes": "430x977",
+      "type": "image/png",
+      "form_factor": "narrow"
+    },
+    
+    {
+      "src": "images/desktop1.png",
+      "sizes": "1908x955",
+      "type": "image/png",
+      "form_factor": "wide"
+    },
+    {
+      "src": "images/desktop2.png",
+      "sizes": "1920x973",
+      "type": "image/png",
+      "form_factor": "wide"
+    }
+  ],
+    "shortcuts": [
+    {
+      "name": "Story Baru",
+      "short_name": "Baru",
+      "description": "Membuat Story baru.",
+      "url": "/?source=pwa#/create",
+      "icons": [
+        {
+          "src": "images/logo144.png",
+          "type": "image/png",
+          "sizes": "144x144"
+        }
+      ]
+    }
+  ]
+}
