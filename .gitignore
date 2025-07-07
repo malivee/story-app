@@ -1,0 +1,10 @@
+# Directories
+.idea
+.vscode
+node_modules
+dist
+
+# Files
+.env
+STUDENT.txt
+starter-project-with-webpack.zip
