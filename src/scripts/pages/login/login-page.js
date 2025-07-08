@@ -23,7 +23,7 @@ export default class LoginPage {
         <label for="password">Kata sandi</label>
         <input type="password" id="password" placeholder="Masukkan kata sandi" required />
 
-        <p><a href="#/register">Belum mempunyai akun? Daftar sekarang</p>
+        <p><a href="#/register">Belum mempunyai akun? Daftar sekarang</a></p>
 
         <button type="submit" id=login-button" class="login-button">Masuk</button>
       </form>
@@ -54,8 +54,6 @@ export default class LoginPage {
 
         saveApiHeaders(result.loginResult.token);
         window.location.hash = "/";
-        window.location.href = "#/";
-        window.location.reload();
       } catch (error) {
         alert("Login gagal. Cek kembali email dan password kamu.");
       }

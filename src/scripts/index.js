@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const logoApp = document.getElementById("logo");
   logoApp.src = logo;
 
-    await registerServiceWorker();
+  await registerServiceWorker();
 
   const app = new App({
     drawerButton: document.getElementById("drawerButton"),
@@ -28,4 +28,17 @@ document.addEventListener("DOMContentLoaded", async () => {
       await app.renderPage();
     }
   });
-});
+
+  document.body.addEventListener("click", (event) => {
+    const link = event.target.closest("a[href^='#']");
+    if (link) {
+      event.preventDefault();
+      const newHash = link.getAttribute("href");
+
+      if (window.location.hash !== newHash) {
+        window.location.hash = newHash;
+      } else {
+        window.dispatchEvent(new HashChangeEvent("hashchange"));
+      }
+    }
+})})
